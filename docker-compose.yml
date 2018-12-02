@@ -12,6 +12,10 @@ services:
       # ./scripts/https-deploy.sh.
       # See https://blog.dcycle.com/blog/2018-10-27 for details.
       - VIRTUAL_HOST=${VIRTUAL_HOST}
+      # See https://blog.dcycle.com/blog/170a6078/letsencrypt-drupal-docker/
+      # Add these to your ./.env file
+      - LETSENCRYPT_HOST=${VIRTUAL_HOST}
+      - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL}
       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     volumes:
       - "./do-not-commit/legacy-files:/legacy-files"
