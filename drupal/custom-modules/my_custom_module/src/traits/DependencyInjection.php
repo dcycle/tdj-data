@@ -26,7 +26,7 @@ trait DependencyInjection {
    * @return Migrate
    *   The Migrate singleton.
    */
-  public function app() : Migrate {
+  public function migrate() : Migrate {
     return Migrate::instance();
   }
 

@@ -3,7 +3,7 @@
 $databases['default']['default'] = [
   'database' => 'drupal',
   'username' => 'root',
-  'password' => 'drupal',
+  'password' => getenv('MYSQL_ROOT_PASSWORD'),
   'host' => 'mysql',
   'port' => '3306',
   'driver' => 'mysql',
