@@ -3,6 +3,7 @@
 namespace Drupal\my_custom_module;
 
 use Drupal\my_custom_module\traits\Singleton;
+use Drupal\my_custom_module\traits\DependencyInjection;
 use Drupal\my_custom_module\traits\Environment;
 
 /**
@@ -10,6 +11,7 @@ use Drupal\my_custom_module\traits\Environment;
  */
 class App {
 
+  use DependencyInjection;
   use Singleton;
   use Environment;
 

@@ -1,7 +1,9 @@
-Starterkit for a complete Drupal 8 site
+TDJ data backend
 =====
 
-[![CircleCI](https://circleci.com/gh/dcycle/starterkit-drupal8site.svg?style=svg)](https://circleci.com/gh/dcycle/starterkit-drupal8site)
+[![CircleCI](https://circleci.com/gh/dcycle/tdj-data.svg?style=svg)](https://circleci.com/gh/dcycle/tdj-data)
+
+Based on the [Drupal 8 Starterkit](http://github.com/dcycle/starterkit-drupal8site/).
 
 Quickstart
 -----
@@ -10,10 +12,10 @@ Step 1: Install [Docker](https://www.docker.com/get-docker) (nothing else requir
 
 Step 2:
 
-    cd ~/Desktop && git clone https://github.com/dcycle/starterkit-drupal8site.git
+    cd ~/Desktop && git clone https://github.com/dcycle/tdj-d8.git
     cd ~/Desktop/starterkit-drupal8site && ./scripts/deploy.sh
 
-Step 3: Click on the login link at the end of the command line output and enjoy a fully installed Drupal 8 environment.
+Step 3: Click on the login link at the end of the command line output and enjoy a fully installed Drupal 8 environment for the Terre des jeunes project.
 
 HTTPS quickstart
 -----
@@ -25,7 +27,7 @@ See the article [Local development using Docker and HTTPS, Dcycle Blog, Oct. 27,
 About
 -----
 
-A starterkit to build a Drupal 8 project.
+The Terre des jeunes data website.
 
 ### Features
 
@@ -36,9 +38,8 @@ A starterkit to build a Drupal 8 project.
 
 ### Where to find the code
 
-* The [code lives on GitHub](https://github.com/dcycle/starterkit-drupal8site).
-* The [issue queue is on GitHub](https://github.com/dcycle/starterkit-drupal8site/issues).
-* If you fork of copy this directory for your own project, enter other environments here (production, stage, secondary git origins).
+* The [code lives on GitHub](https://github.com/dcycle/tdj-data).
+* The [issue queue is on GitHub](https://github.com/dcycle/tdj-data/issues).
 
 Initial installation on Docker
 -----
@@ -120,7 +121,6 @@ We do not use SASS in this project to avoid complexity. If you want to implement
 
 * Generated CSS should be created in the build phase by `./scripts/create-build.sh`. Because we only allow Docker as a dependency of this project, you might consider a technique such as the one outlined in ["Compass Sass to CSS using Docker", Feb. 9, 2016, Dcycle blog](http://blog.dcycle.com/blog/107/compass-sass-css-using-docker/).
 * You should not commit generated CSS to this git repo. You might need to `.gitignore` certain files, or make sure they reside on the container, but not your local computer.
-* Do you need a real-time compiler directly embedded in your container?
 
 ### Docker-based one-click development setup
 
@@ -151,32 +151,7 @@ Because our git repo does not contain actual Drupal or module code, it downloads
 Theming
 -----
 
-We are using the [CDN Drupal Bootstrap subtheme](https://drupal-bootstrap.org/api/bootstrap/starterkits%21cdn%21README.md/group/sub_theming_cdn/8).
-
-Acquia
------
-
-This project provides some integration with Acquia Cloud.
-
-### Prerequisites on the Acquia server
-
-* We need to install the same version of PHP as can be found on the containers by typing `docker-compose exec drupal /bin/bash -c 'php -v'`.
-* Make sure you are periodically calling "drush cron" from the command line using [this technique](https://docs.acquia.com/acquia-cloud/manage/cron) on your Acquia site.
-
-### Notes about cron on Acquia
-
-Acquia suggests [this technique](https://docs.acquia.com/acquia-cloud/manage/cron) for setting up cron.
-
-    drush @MY-ACQUIA-ACCOUNT -dv -l http://my-site-on-acquia.example.com cron &>> /var/log/sites/${AH_SITE_NAME}/logs/$(hostname -s)/drush-cron.log
-
-### Do not modify the Acquia git code directly, "build" it instead
-
-Run ./scripts/create-build.sh
-
-Login links for Acquia environments
------
-
-    ./scripts/acquia/uli.sh
+The plan is for a decoupled setup with a front-end completely separate from this backend.
 
 Linting
 -----
@@ -250,23 +225,3 @@ If you _know_ "something" has changed, you might want to run:
 ### Can't see the syslogs (see the "Logging" section, above)
 
 Run `./scripts/deploy.sh`, which will restart rsyslog.
-
-
-docker network connect tdj_d8 --alias=oldmysql b801ad764181697c2ec2ceacdbdd13cca175b35463f7adbc2f682f51d60d6f64
-mysql --user=root --password=drupal --database=drupal --host=oldmysql --port=3306
-drush migrate-upgrade --legacy-db-url='mysql://root:drupal@oldmysql/drupal' --legacy-root=http://terredesjeunes.org --configure-only
-drush migrate-status
-
-drush
-
-drush migrate-import upgrade_d6_file --limit=5
-upgrade_d6_user
-upgrade_d6_node_antenne
-upgrade_d6_node_faq
-upgrade_d6_node_page
-upgrade_d6_node_procesverbal
-upgrade_d6_node_story
-upgrade_d6_node_tdj_ressource
-upgrade_d6_url_alias
-
-drush mmsg upgrade_d6_file
