@@ -1,0 +1,22 @@
+uuid: 2a2c34c3-d3ea-4a72-9eb2-92a4c2e13960
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tdj_projet_groupe
+id: node.tdj_projet_groupe.promote
+field_name: promote
+entity_type: node
+bundle: tdj_projet_groupe
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

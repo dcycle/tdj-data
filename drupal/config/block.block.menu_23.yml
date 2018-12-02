@@ -1,0 +1,24 @@
+uuid: ebf8c173-3c9a-4610-8f64-9ec2b6eef6b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.devel
+  module:
+    - system
+  theme:
+    - seven
+id: menu_23
+theme: seven
+region: content
+weight: 0
+provider: null
+plugin: 'system_menu_block:devel'
+settings:
+  id: 'system_menu_block:devel'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

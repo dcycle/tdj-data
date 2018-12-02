@@ -1,0 +1,45 @@
+uuid: 7b64879a-2fe7-4e4d-b3f6-071e168a30df
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.story.body
+    - field.field.node.story.comment_node_story
+    - field.field.node.story.field_images
+    - field.field.node.story.field_my_documents
+    - field.field.node.story.field_my_non_public_docs
+    - node.type.story
+  module:
+    - file
+    - user
+id: node.story.rss
+targetEntityType: node
+bundle: story
+mode: rss
+content:
+  field_my_documents:
+    label: above
+    weight: 16
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_my_non_public_docs:
+    label: hidden
+    weight: 27
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_story: true
+  field_images: true

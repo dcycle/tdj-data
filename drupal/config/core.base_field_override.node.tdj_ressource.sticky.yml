@@ -1,0 +1,22 @@
+uuid: 8e634a78-0dcd-49d9-a6b1-300c95632b0c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tdj_ressource
+id: node.tdj_ressource.sticky
+field_name: sticky
+entity_type: node
+bundle: tdj_ressource
+label: 'Sticky at the top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

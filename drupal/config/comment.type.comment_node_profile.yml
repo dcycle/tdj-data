@@ -1,0 +1,8 @@
+uuid: c55065a0-4264-4103-90b7-8944e43e1b65
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_profile
+label: 'Profil comment'
+target_entity_type_id: node
+description: null

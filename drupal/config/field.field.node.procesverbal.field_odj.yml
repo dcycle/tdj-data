@@ -1,0 +1,21 @@
+uuid: b91dfc29-4ef9-420f-b55a-b5cc05d5cb7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_odj
+    - node.type.procesverbal
+  module:
+    - text
+id: node.procesverbal.field_odj
+field_name: field_odj
+entity_type: node
+bundle: procesverbal
+label: 'Ordre du jour'
+description: '<p>L''ordre du jour de l''assembl&eacute;e</p>'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

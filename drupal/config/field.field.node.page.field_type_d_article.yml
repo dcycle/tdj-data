@@ -1,0 +1,24 @@
+uuid: 59ebd416-9355-4b6d-9510-a3c9639202b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_d_article
+    - node.type.page
+id: node.page.field_type_d_article
+field_name: field_type_d_article
+entity_type: node
+bundle: page
+label: 'Type d''article'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      - field_type_d_article
+    auto_create: true
+field_type: entity_reference

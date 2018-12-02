@@ -1,0 +1,22 @@
+uuid: a851b05a-4659-44d3-bd7d-397e44a3a69a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.tdj_projet
+  module:
+    - text
+id: node.tdj_projet.body
+field_name: body
+entity_type: node
+bundle: tdj_projet
+label: Corps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

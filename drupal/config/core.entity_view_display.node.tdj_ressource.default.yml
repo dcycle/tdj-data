@@ -1,0 +1,93 @@
+uuid: 65422f7d-d25f-4824-8f56-6292ecdbe468
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_tdj_ressource.default
+    - field.field.node.tdj_ressource.body
+    - field.field.node.tdj_ressource.comment_node_tdj_ressource
+    - field.field.node.tdj_ressource.field_categorie_de_ressrouce
+    - field.field.node.tdj_ressource.field_my_documents
+    - field.field.node.tdj_ressource.field_tdj_liens
+    - field.field.node.tdj_ressource.field_tdj_resource_image
+    - field.field.node.tdj_ressource.upload
+    - node.type.tdj_ressource
+  module:
+    - comment
+    - file
+    - image
+    - link
+    - text
+    - user
+id: node.tdj_ressource.default
+targetEntityType: node
+bundle: tdj_ressource
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_tdj_ressource:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_categorie_de_ressrouce:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: -3
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_tdj_liens:
+    label: above
+    weight: -2
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    region: content
+  field_tdj_resource_image:
+    label: above
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    type: file_default
+    weight: 102
+    third_party_settings: {  }
+    region: content
+hidden: {  }

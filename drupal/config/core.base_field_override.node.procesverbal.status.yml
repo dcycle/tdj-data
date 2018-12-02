@@ -1,0 +1,22 @@
+uuid: a539fff2-db8b-44dc-bcb2-f2fd25a638dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.procesverbal
+id: node.procesverbal.status
+field_name: status
+entity_type: node
+bundle: procesverbal
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

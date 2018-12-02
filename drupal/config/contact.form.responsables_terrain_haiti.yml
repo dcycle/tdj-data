@@ -1,0 +1,13 @@
+uuid: e55c7868-e5b8-44d3-83a2-67b53d90c21b
+langcode: en
+status: true
+dependencies: {  }
+id: responsables_terrain_haiti
+label: 'Responsables terrain Haïti'
+recipients:
+  - antjilela@yahoo.com
+  - terredesjeunesorgo@hotmail.com
+reply: ''
+weight: 0
+message: null
+redirect: null

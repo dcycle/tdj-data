@@ -1,0 +1,8 @@
+uuid: d5bfc3bb-14f0-41cd-83c7-d632e78fceeb
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_simplenews
+label: 'Parution du bulletin comment'
+target_entity_type_id: node
+description: null

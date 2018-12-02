@@ -1,0 +1,21 @@
+uuid: 9425d291-953d-4516-83f8-ee7aae4257f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_tdj_profile_motivation
+    - node.type.profile
+  module:
+    - text
+id: node.profile.field_my_tdj_profile_motivation
+field_name: field_my_tdj_profile_motivation
+entity_type: node
+bundle: profile
+label: Motivation
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

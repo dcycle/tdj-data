@@ -1,0 +1,22 @@
+uuid: f5a54bea-4f8e-430b-9e3e-d2a9ddbe46e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.blocknode
+id: node.blocknode.promote
+field_name: promote
+entity_type: node
+bundle: blocknode
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

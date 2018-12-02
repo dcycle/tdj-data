@@ -1,0 +1,18 @@
+uuid: c35303c9-aaad-4562-9322-2f37cec9b36a
+langcode: en
+status: false
+dependencies:
+  theme:
+    - chasmogamous
+id: menu_5
+theme: chasmogamous
+region: ''
+weight: -10
+provider: null
+plugin: 'system_menu_block:secondary-links'
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+visibility: {  }

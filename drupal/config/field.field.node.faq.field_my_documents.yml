@@ -1,0 +1,27 @@
+uuid: df9aebbf-3846-4b01-ae6a-708eba69505c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_documents
+    - node.type.faq
+  module:
+    - file
+id: node.faq.field_my_documents
+field_name: field_my_documents
+entity_type: node
+bundle: faq
+label: Documents
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'pdf zip'
+  file_directory: ''
+  description_field: false
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

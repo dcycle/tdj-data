@@ -1,0 +1,24 @@
+uuid: ae711944-c1bb-47ce-b3b6-28b7c6f18edd
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_menu
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Configuration
+migration_group: migrate_drupal_6
+label: Menus
+source:
+  plugin: menu
+process:
+  id: menu_name
+  label: title
+  description: description
+destination:
+  plugin: 'entity:menu'
+migration_dependencies:
+  required: {  }
+  optional: {  }

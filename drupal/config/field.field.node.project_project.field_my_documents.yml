@@ -1,0 +1,27 @@
+uuid: 85d50620-11d2-444d-af68-0859cfc1f446
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_documents
+    - node.type.project_project
+  module:
+    - file
+id: node.project_project.field_my_documents
+field_name: field_my_documents
+entity_type: node
+bundle: project_project
+label: Documents
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: pdf
+  file_directory: ''
+  description_field: false
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

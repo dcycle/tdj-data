@@ -1,0 +1,113 @@
+uuid: 102c552e-bd39-4e53-bf03-95d2b3ead5d6
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_term_node_revision_7
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Content
+migration_group: migrate_drupal_6
+label: 'Term/node relationship revisions'
+source:
+  plugin: d6_term_node_revision
+  vid: '7'
+process:
+  vid:
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_d6_node_revision_antenne
+        - upgrade_d6_node_revision_articlesoumisparcourriel
+        - upgrade_d6_node_revision_blocknode
+        - upgrade_d6_node_revision_faq
+        - upgrade_d6_node_revision_image
+        - upgrade_d6_node_revision_minisite
+        - upgrade_d6_node_revision_my_certificat
+        - upgrade_d6_node_revision_my_issue
+        - upgrade_d6_node_revision_page
+        - upgrade_d6_node_revision_procesverbal
+        - upgrade_d6_node_revision_profile
+        - upgrade_d6_node_revision_project_project
+        - upgrade_d6_node_revision_simplenews
+        - upgrade_d6_node_revision_story
+        - upgrade_d6_node_revision_tdj_projet
+        - upgrade_d6_node_revision_tdj_projet_groupe
+        - upgrade_d6_node_revision_tdj_ressource
+        - upgrade_d6_node_revision_webform
+      source: vid
+    -
+      plugin: skip_on_empty
+      method: row
+  type: type
+  taxonomy_forums: tid
+destination:
+  plugin: 'entity_revision:node'
+migration_dependencies:
+  required:
+    - upgrade_d6_term_node_1
+    - upgrade_d6_term_node_2
+    - upgrade_d6_term_node_3
+    - upgrade_d6_term_node_4
+    - upgrade_d6_term_node_5
+    - upgrade_d6_term_node_6
+    - upgrade_d6_term_node_7
+    - upgrade_d6_term_node_8
+    - upgrade_d6_term_node_9
+    - upgrade_d6_node_revision_antenne
+    - upgrade_d6_node_revision_articlesoumisparcourriel
+    - upgrade_d6_node_revision_blocknode
+    - upgrade_d6_node_revision_faq
+    - upgrade_d6_node_revision_image
+    - upgrade_d6_node_revision_minisite
+    - upgrade_d6_node_revision_my_certificat
+    - upgrade_d6_node_revision_my_issue
+    - upgrade_d6_node_revision_page
+    - upgrade_d6_node_revision_procesverbal
+    - upgrade_d6_node_revision_profile
+    - upgrade_d6_node_revision_project_project
+    - upgrade_d6_node_revision_simplenews
+    - upgrade_d6_node_revision_story
+    - upgrade_d6_node_revision_tdj_projet
+    - upgrade_d6_node_revision_tdj_projet_groupe
+    - upgrade_d6_node_revision_tdj_ressource
+    - upgrade_d6_node_revision_webform
+  optional:
+    - upgrade_d6_node_revision_antenne
+    - upgrade_d6_node_revision_articlesoumisparcourriel
+    - upgrade_d6_node_revision_blocknode
+    - upgrade_d6_node_revision_faq
+    - upgrade_d6_node_revision_image
+    - upgrade_d6_node_revision_minisite
+    - upgrade_d6_node_revision_my_certificat
+    - upgrade_d6_node_revision_my_issue
+    - upgrade_d6_node_revision_page
+    - upgrade_d6_node_revision_procesverbal
+    - upgrade_d6_node_revision_profile
+    - upgrade_d6_node_revision_project_project
+    - upgrade_d6_node_revision_simplenews
+    - upgrade_d6_node_revision_story
+    - upgrade_d6_node_revision_tdj_projet
+    - upgrade_d6_node_revision_tdj_projet_groupe
+    - upgrade_d6_node_revision_tdj_ressource
+    - upgrade_d6_node_revision_webform
+    - upgrade_d6_node_revision_antenne
+    - upgrade_d6_node_revision_articlesoumisparcourriel
+    - upgrade_d6_node_revision_blocknode
+    - upgrade_d6_node_revision_faq
+    - upgrade_d6_node_revision_image
+    - upgrade_d6_node_revision_minisite
+    - upgrade_d6_node_revision_my_certificat
+    - upgrade_d6_node_revision_my_issue
+    - upgrade_d6_node_revision_page
+    - upgrade_d6_node_revision_procesverbal
+    - upgrade_d6_node_revision_profile
+    - upgrade_d6_node_revision_project_project
+    - upgrade_d6_node_revision_simplenews
+    - upgrade_d6_node_revision_story
+    - upgrade_d6_node_revision_tdj_projet
+    - upgrade_d6_node_revision_tdj_projet_groupe
+    - upgrade_d6_node_revision_tdj_ressource
+    - upgrade_d6_node_revision_webform

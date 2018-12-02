@@ -1,0 +1,15 @@
+uuid: f26950e1-678e-472a-81e1-c052fcf3f0b4
+langcode: en
+status: true
+dependencies: {  }
+name: tdj_thumb_small_sidemenu
+label: tdj_thumb_small_sidemenu
+effects:
+  280b9bd0-3e8b-412a-af93-791c9d206d6b:
+    uuid: 280b9bd0-3e8b-412a-af93-791c9d206d6b
+    id: image_scale
+    weight: 0
+    data:
+      width: null
+      height: 21
+      upscale: true

@@ -1,0 +1,9 @@
+uuid: 96818b21-b4c0-4d6e-8230-6dc1d6ecccc8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Catégorie de ressrouce'
+vid: categorie_de_ressrouce
+description: ''
+hierarchy: 0
+weight: 0

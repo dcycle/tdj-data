@@ -1,0 +1,8 @@
+uuid: cb0d2bfa-1089-4e93-af66-6d911a11834e
+langcode: en
+status: true
+dependencies: {  }
+id: menu-don
+label: 'Faire un don'
+description: 'Lien vers un don dans l''entête'
+locked: false

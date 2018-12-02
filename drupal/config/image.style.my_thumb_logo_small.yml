@@ -1,0 +1,23 @@
+uuid: f8abbe0d-ddfe-43f2-9c37-f0d935448412
+langcode: en
+status: true
+dependencies: {  }
+name: my_thumb_logo_small
+label: my_thumb_logo_small
+effects:
+  6cd27ccf-9926-48a4-8009-e8d5ada7c2a8:
+    uuid: 6cd27ccf-9926-48a4-8009-e8d5ada7c2a8
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 75
+      height: 75
+      anchor: center-center
+  042658e3-9d11-46a2-82d4-d8436becf477:
+    uuid: 042658e3-9d11-46a2-82d4-d8436becf477
+    id: image_scale
+    weight: -10
+    data:
+      width: null
+      height: 75
+      upscale: true

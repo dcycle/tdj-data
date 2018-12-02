@@ -1,0 +1,22 @@
+uuid: 8d4acc42-007d-4c2c-92bd-fbf43457a598
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.my_certificat
+id: node.my_certificat.status
+field_name: status
+entity_type: node
+bundle: my_certificat
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

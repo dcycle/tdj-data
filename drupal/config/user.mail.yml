@@ -1,0 +1,30 @@
+cancel_confirm:
+  body: "[user:name],\r\n\r\nVotre compte a été supprimé."
+  subject: 'Détails du compte de [user:name] sur [site:name] (supprimé)'
+password_reset:
+  body: "[user:name],\r\n\r\nOn a demandé la réinitialisation du mot de passe pour votre compte sur [site:name].\r\n\r\nVous pouvez à présent vous connecter à [site:url-brief] en cliquant sur ce lien ou en le copiant-collant dans votre navigateur :\r\n\r\n[user:one-time-login-url]\r\n\r\nIl s'agit d'une connexion temporaire, elle ne peut être utilisée qu'une fois. Elle expire après un jour et rien ne se passe si elle n'est pas utilisée.\r\n\r\nAprès vous être connecté, vous serez redirigé vers [user:edit-url] pour pouvoir changer votre mot de passe."
+  subject: 'Information de changement de mot de passe pour [user:name] sur [site:name]'
+register_admin_created:
+  body: "[user:name],\r\n\r\nUn administrateur de [site:name] a créé un compte pour vous. Vous pouvez à présent vous connecter à [site:login-url] avec le nom d'utilisateur et le mot de passe :\r\n\r\nnom d'utilisateur\_: [user:name]\r\nmot de passe\_: \r\n\r\nVous pouvez aussi vous connecter en cliquant sur ce lien ou le copier-coller dans votre navigateur\_:\r\n\r\n[user:one-time-login-url]\r\n\r\nIl s'agit d'une connexion temporaire, elle ne peut être utilisée qu'une fois.\r\n\r\nAprès vous être connecté, vous serez redirigé vers [user:edit-url] pour pouvoir changer votre mot de passe.\r\n\r\n\r\n--  l'équipe de [site:name]"
+  subject: 'Un administrateur a créé un compte pour vous sur [site:name]'
+register_no_approval_required:
+  body: "[user:name],\r\n\r\nMerci de votre inscription sur [site:name]. Vous pouvez à présent vous connecter à [site:login-url] avec le nom d'utilisateur et le mot de passe :\r\n\r\nnom d'utilisateur\_: [user:name]\r\nmot de passe\_: \r\n\r\nVous pouvez aussi vous connecter en cliquant sur ce lien ou le copier-coller dans votre navigateur\_:\r\n\r\n[user:one-time-login-url]\r\n\r\nIl s'agit d'une connexion temporaire, elle ne peut être utilisée qu'une fois.\r\n\r\nAprès vous être connecté, vous serez redirigé vers [user:edit-url] pour pouvoir changer votre mot de passe.\r\n\r\n\r\n--  l'équipe de [site:name]"
+  subject: 'Détails du compte [user:name] sur [site:name]'
+register_pending_approval:
+  body: "[user:name],\r\n\r\nMerci de votre inscription sur [site:name]. Votre demande de compte est actuellement en attente d'approbation. Lorsqu'elle sera validée, vous recevrez un nouveau message vous indiquant entre autres détails comment vous connecter et définir votre mot de passe.\r\n\r\n--  l'équipe de [site:name]"
+  subject: 'Détails du compte de [user:name] sur [site:name] (en attente de validation par l''administrateur)'
+register_pending_approval_admin:
+  body: "[user:display-name] has applied for an account.\n\n[user:edit-url]"
+  subject: 'Account details for [user:display-name] at [site:name] (pending admin approval)'
+status_activated:
+  body: "[user:name],\r\n\r\nVotre compte sur [site:name] a été activé.\r\n\r\nVous pouvez maintenant vous connecter en cliquant sur ce lien ou en le copier-coller dans votre navigateur\_:\r\n\r\n[user:one-time-login-url]\r\n\r\nIl s'agit d'une connexion temporaire, elle ne peut être utilisée qu'une fois.\r\n\r\nAprès vous être connecté, vous serez redirigé vers [user:edit-url] pour pouvoir changer votre mot de passe.\r\n\r\nAprès avoir défini votre mot de passe, vous pourrez vous connecter à l'adresse suivante [site:login-url], en utilisant :\r\n\r\nnom d'utilisateur : [user:name]\r\n"
+  subject: 'Détails du compte de [user:name] sur [site:name] (approuvé)'
+status_blocked:
+  body: "[user:name],\r\n\r\nVotre compte sur [site:name] a été verrouillé."
+  subject: 'Détails du compte de [user:name] sur [site:name] (bloqué)'
+status_canceled:
+  body: "[user:display-name],\n\nYour account on [site:name] has been canceled.\n\n--  [site:name] team"
+  subject: 'Account details for [user:display-name] at [site:name] (canceled)'
+langcode: en
+_core:
+  default_config_hash: m4J3ROov32OEquRYGLbx3SpdDGuqx9l_zJtNvihqdCg

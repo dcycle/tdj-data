@@ -1,0 +1,23 @@
+uuid: 4b3621ad-015f-455a-853e-01daf1425038
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tdj_liens
+    - node.type.tdj_ressource
+  module:
+    - link
+id: node.tdj_ressource.field_tdj_liens
+field_name: field_tdj_liens
+entity_type: node
+bundle: tdj_ressource
+label: Liens
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

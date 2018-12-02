@@ -1,0 +1,22 @@
+uuid: b93de0a4-78d7-41dc-9c9e-7d5b2de87898
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.antenne
+  module:
+    - text
+id: node.antenne.body
+field_name: body
+entity_type: node
+bundle: antenne
+label: Corps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

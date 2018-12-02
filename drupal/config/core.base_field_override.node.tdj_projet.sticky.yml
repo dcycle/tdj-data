@@ -1,0 +1,22 @@
+uuid: ac11daec-443d-47f0-8412-87b9d4178738
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tdj_projet
+id: node.tdj_projet.sticky
+field_name: sticky
+entity_type: node
+bundle: tdj_projet
+label: 'Sticky at the top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,27 @@
+uuid: 886ed3db-b4f6-4a6b-a070-f083b3ecdded
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_documents
+    - node.type.story
+  module:
+    - file
+id: node.story.field_my_documents
+field_name: field_my_documents
+entity_type: node
+bundle: story
+label: Documents
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'pdf jpg'
+  file_directory: ''
+  description_field: false
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,56 @@
+uuid: 82f7b65b-6572-4efb-ac9e-7e9fad18db67
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_revision_story
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Content
+migration_group: migrate_drupal_6
+label: 'Node revisions (story)'
+source:
+  plugin: d6_node_revision
+  node_type: story
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: migration_lookup
+    migration: upgrade_d6_filter_format
+    source: format
+  body/value: body
+  body/summary: teaser
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_images:
+    plugin: d6_field_file
+    source: field_images
+  field_my_documents:
+    plugin: d6_field_file
+    source: field_my_documents
+  field_my_non_public_docs:
+    plugin: d6_field_file
+    source: field_my_non_public_docs
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: story
+migration_dependencies:
+  required:
+    - upgrade_d6_node_story
+  optional:
+    - upgrade_d6_filter_format

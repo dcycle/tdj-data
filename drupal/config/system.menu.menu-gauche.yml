@@ -1,0 +1,8 @@
+uuid: 267d87c9-2003-4deb-9415-99cca71d6fef
+langcode: en
+status: true
+dependencies: {  }
+id: menu-gauche
+label: 'Antennes TDJ'
+description: ''
+locked: false

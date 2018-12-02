@@ -1,0 +1,21 @@
+uuid: b2e8906c-ec08-4711-a667-27eeb8f5d67a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_translation_priority
+    - node.type.page
+  module:
+    - options
+id: node.page.field_my_translation_priority
+field_name: field_my_translation_priority
+entity_type: node
+bundle: page
+label: 'Translation Priority'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

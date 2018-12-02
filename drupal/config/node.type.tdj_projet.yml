@@ -1,0 +1,18 @@
+uuid: f78127a8-4349-4b60-88e3-52a01d4b8592
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - primary-links
+    parent: 'primary-links:'
+name: Projet
+type: tdj_projet
+description: 'Un projet'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

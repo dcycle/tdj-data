@@ -1,0 +1,22 @@
+uuid: 11143b62-22e8-456b-805b-0af820873cc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.my_certificat
+id: node.my_certificat.promote
+field_name: promote
+entity_type: node
+bundle: my_certificat
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

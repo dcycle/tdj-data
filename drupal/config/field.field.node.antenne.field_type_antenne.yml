@@ -1,0 +1,21 @@
+uuid: 916aaeb8-993f-4f46-b725-065e3a05bab2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_antenne
+    - node.type.antenne
+  module:
+    - options
+id: node.antenne.field_type_antenne
+field_name: field_type_antenne
+entity_type: node
+bundle: antenne
+label: 'Type d''antenne'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

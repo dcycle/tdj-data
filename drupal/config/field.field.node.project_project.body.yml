@@ -1,0 +1,22 @@
+uuid: 3a591b59-0232-428a-8fa6-c6bfe6caa4b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.project_project
+  module:
+    - text
+id: node.project_project.body
+field_name: body
+entity_type: node
+bundle: project_project
+label: Corps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

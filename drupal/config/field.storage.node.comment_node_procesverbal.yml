@@ -1,0 +1,20 @@
+uuid: b4b5a781-f125-4d50-8cf0-95be2129fbfd
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_procesverbal
+field_name: comment_node_procesverbal
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_procesverbal
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

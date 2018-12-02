@@ -1,0 +1,22 @@
+uuid: fc21755e-fe5f-43f1-bcc8-2a99b8e0846a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.articlesoumisparcourriel
+id: node.articlesoumisparcourriel.status
+field_name: status
+entity_type: node
+bundle: articlesoumisparcourriel
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

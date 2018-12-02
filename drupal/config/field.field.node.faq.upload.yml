@@ -1,0 +1,27 @@
+uuid: baf2b900-feba-45e0-a4b0-ba61054279b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.upload
+    - node.type.faq
+  module:
+    - file
+id: node.faq.upload
+field_name: upload
+entity_type: node
+bundle: faq
+label: upload
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  description_field: true
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+  max_filesize: 1MB
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

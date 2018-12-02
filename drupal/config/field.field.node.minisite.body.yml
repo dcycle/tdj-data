@@ -1,0 +1,22 @@
+uuid: cb3d2f30-293e-4ea8-9a1c-7258b5a9f024
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.minisite
+  module:
+    - text
+id: node.minisite.body
+field_name: body
+entity_type: node
+bundle: minisite
+label: Corps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

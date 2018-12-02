@@ -1,0 +1,24 @@
+uuid: 2c5dc1f2-02ea-42ee-8831-27ad95088431
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_issue_tags
+    - node.type.my_issue
+id: node.my_issue.field_issue_tags
+field_name: field_issue_tags
+entity_type: node
+bundle: my_issue
+label: 'Issue tags'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      - field_issue_tags
+    auto_create: true
+field_type: entity_reference

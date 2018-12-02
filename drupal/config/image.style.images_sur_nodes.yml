@@ -1,0 +1,15 @@
+uuid: f5b62481-0750-419e-9645-e7987ebfd179
+langcode: en
+status: true
+dependencies: {  }
+name: images_sur_nodes
+label: images_sur_nodes
+effects:
+  64201e4e-f806-4e6c-b054-79f9124503c2:
+    uuid: 64201e4e-f806-4e6c-b054-79f9124503c2
+    id: image_scale
+    weight: 0
+    data:
+      width: null
+      height: 160
+      upscale: false

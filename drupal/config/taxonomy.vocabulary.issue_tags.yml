@@ -1,0 +1,9 @@
+uuid: 2bd24136-b5c8-427b-bd9d-7709bd5a1d93
+langcode: en
+status: true
+dependencies: {  }
+name: 'Issue tags'
+vid: issue_tags
+description: 'cf http://drupal.org/node/582586'
+hierarchy: 0
+weight: 0

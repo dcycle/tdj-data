@@ -1,0 +1,21 @@
+uuid: 3ce48da4-f0fd-4b86-8131-a5a8a792b243
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_tdj_activite
+    - node.type.antenne
+  module:
+    - options
+id: node.antenne.field_my_tdj_activite
+field_name: field_my_tdj_activite
+entity_type: node
+bundle: antenne
+label: Actif
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

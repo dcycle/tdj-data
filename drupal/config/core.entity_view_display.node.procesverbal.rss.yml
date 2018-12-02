@@ -1,0 +1,70 @@
+uuid: 29e252b4-4305-4d28-b9c0-5c52b8f229c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.procesverbal.body
+    - field.field.node.procesverbal.comment_node_procesverbal
+    - field.field.node.procesverbal.field_adopte
+    - field.field.node.procesverbal.field_datedebut
+    - field.field.node.procesverbal.field_my_documents
+    - field.field.node.procesverbal.field_odj
+    - field.field.node.procesverbal.field_presences
+    - node.type.procesverbal
+  module:
+    - datetime
+    - file
+    - text
+    - user
+id: node.procesverbal.rss
+targetEntityType: node
+bundle: procesverbal
+mode: rss
+content:
+  field_adopte:
+    label: above
+    weight: -3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_datedebut:
+    label: above
+    weight: -1
+    type: datetime_default
+    settings:
+      format_type: fallback
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 1
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_odj:
+    label: above
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_presences:
+    label: above
+    weight: -2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_procesverbal: true

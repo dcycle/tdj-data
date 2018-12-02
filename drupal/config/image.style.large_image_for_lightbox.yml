@@ -1,0 +1,15 @@
+uuid: 06c607ae-7bad-4c71-b71a-be8d56262469
+langcode: en
+status: true
+dependencies: {  }
+name: large_image_for_lightbox
+label: large_image_for_lightbox
+effects:
+  ae0cf9ae-659b-4bea-8ec6-1a57e306182b:
+    uuid: ae0cf9ae-659b-4bea-8ec6-1a57e306182b
+    id: image_scale
+    weight: 0
+    data:
+      width: 800
+      height: null
+      upscale: false

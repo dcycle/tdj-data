@@ -1,0 +1,20 @@
+uuid: 1ca1d19a-01a6-4613-933b-406091c09035
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_simplenews
+field_name: comment_node_simplenews
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_simplenews
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

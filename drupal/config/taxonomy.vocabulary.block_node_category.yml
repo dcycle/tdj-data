@@ -1,0 +1,9 @@
+uuid: 7fe2e8bd-8822-40a8-abb3-7d2ae3b9f4a9
+langcode: en
+status: true
+dependencies: {  }
+name: 'Block Node Category'
+vid: block_node_category
+description: ''
+hierarchy: 1
+weight: 0

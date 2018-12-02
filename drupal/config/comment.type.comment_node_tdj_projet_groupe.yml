@@ -1,0 +1,8 @@
+uuid: df42965c-fe71-4223-b97b-47edde997272
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_tdj_projet_groupe
+label: 'Projet (groupe) comment'
+target_entity_type_id: node
+description: null

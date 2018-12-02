@@ -1,0 +1,15 @@
+uuid: caf2af6d-61c3-47b9-92f9-4e6135e7349a
+langcode: en
+status: true
+dependencies: {  }
+name: tdj_full_lightbox_target
+label: tdj_full_lightbox_target
+effects:
+  7f840ebf-f553-4b77-b524-303c8466d2e6:
+    uuid: 7f840ebf-f553-4b77-b524-303c8466d2e6
+    id: image_scale
+    weight: 0
+    data:
+      width: 1000
+      height: null
+      upscale: true

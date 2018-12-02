@@ -1,0 +1,8 @@
+uuid: 6a5273c1-a4cb-4986-b1ad-253a7fad94e0
+langcode: en
+status: true
+dependencies: {  }
+id: menu-actions
+label: 'Actions concrètes'
+description: ''
+locked: false

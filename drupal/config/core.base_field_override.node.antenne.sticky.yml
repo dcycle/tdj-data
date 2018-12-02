@@ -1,0 +1,22 @@
+uuid: 0424e6e6-59ff-4e6f-be24-038c3edc3fc9
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.antenne
+id: node.antenne.sticky
+field_name: sticky
+entity_type: node
+bundle: antenne
+label: 'Sticky at the top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

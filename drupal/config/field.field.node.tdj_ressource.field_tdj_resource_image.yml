@@ -1,0 +1,38 @@
+uuid: 4fcdc32b-cac1-4bc1-97c3-57ea309f82a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tdj_resource_image
+    - node.type.tdj_ressource
+  module:
+    - image
+id: node.tdj_ressource.field_tdj_resource_image
+field_name: field_tdj_resource_image
+entity_type: node
+bundle: tdj_ressource
+label: Image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  file_directory: ''
+  max_filesize: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,8 @@
+uuid: a3d9d59f-f301-4674-989e-8ef2bc2004a0
+langcode: en
+status: true
+dependencies: {  }
+id: primary-links
+label: 'Primary links'
+description: 'Primary links are often used at the theme layer to show the major sections of a site. A typical representation for primary links would be tabs along the top.'
+locked: false

@@ -1,0 +1,27 @@
+uuid: 7e0f02e2-6c45-4185-b261-50eebab3846d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.upload
+    - node.type.my_issue
+  module:
+    - file
+id: node.my_issue.upload
+field_name: upload
+entity_type: node
+bundle: my_issue
+label: upload
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  description_field: true
+  file_extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+  max_filesize: 1MB
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

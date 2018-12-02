@@ -1,0 +1,21 @@
+uuid: 5a9b2155-5c7c-431c-8d9c-0399dada2645
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_simplenews
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_simplenews.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_simplenews
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

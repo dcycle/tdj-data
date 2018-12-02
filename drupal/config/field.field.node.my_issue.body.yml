@@ -1,0 +1,22 @@
+uuid: a587fd9c-d4e8-474c-89d9-4e1bf724fc52
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.my_issue
+  module:
+    - text
+id: node.my_issue.body
+field_name: body
+entity_type: node
+bundle: my_issue
+label: Corps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

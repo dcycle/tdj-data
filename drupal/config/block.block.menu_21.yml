@@ -1,0 +1,18 @@
+uuid: 0b1d5c47-211f-42e3-9946-baefd5fd69b7
+langcode: en
+status: false
+dependencies:
+  theme:
+    - bluemarine
+id: menu_21
+theme: bluemarine
+region: ''
+weight: -6
+provider: null
+plugin: 'system_menu_block:menu-gauche'
+settings:
+  id: broken
+  label: 'Antennes TDJ'
+  provider: core
+  label_display: visible
+visibility: {  }

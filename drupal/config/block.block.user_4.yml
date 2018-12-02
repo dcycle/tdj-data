@@ -1,0 +1,32 @@
+uuid: 80330b8c-6e9a-41e6-a5cb-32acecb84e09
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+    - user
+  theme:
+    - chasmogamous
+id: user_4
+theme: chasmogamous
+region: ''
+weight: -7
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false

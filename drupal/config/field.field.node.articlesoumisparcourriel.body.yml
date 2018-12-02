@@ -1,0 +1,22 @@
+uuid: 027f00a4-5542-4e21-8ef3-de84697aaefe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.articlesoumisparcourriel
+  module:
+    - text
+id: node.articlesoumisparcourriel.body
+field_name: body
+entity_type: node
+bundle: articlesoumisparcourriel
+label: Corps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

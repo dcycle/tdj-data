@@ -1,0 +1,8 @@
+uuid: 98fe0de8-9824-4c0c-b6b2-620c65963705
+langcode: en
+status: true
+dependencies: {  }
+id: menu-usermenu
+label: 'Prochaines étapes'
+description: 'Tâches qui peuvent être faites par l''utilisateur actuel'
+locked: false

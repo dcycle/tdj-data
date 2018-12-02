@@ -1,0 +1,50 @@
+uuid: 1eb9570e-b01a-4f1d-8d81-580e2a6cc7ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_my_certificat.default
+    - field.field.node.my_certificat.body
+    - field.field.node.my_certificat.comment_node_my_certificat
+    - field.field.node.my_certificat.upload
+    - node.type.my_certificat
+  module:
+    - comment
+    - file
+    - text
+    - user
+id: node.my_certificat.default
+targetEntityType: node
+bundle: my_certificat
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_my_certificat:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    type: file_default
+    weight: 102
+    third_party_settings: {  }
+    region: content
+hidden: {  }

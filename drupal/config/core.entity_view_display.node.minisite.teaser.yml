@@ -1,0 +1,30 @@
+uuid: f95e72f7-1d0d-4294-a735-b5aed8c61a6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.minisite.body
+    - node.type.minisite
+  module:
+    - text
+    - user
+id: node.minisite.teaser
+targetEntityType: node
+bundle: minisite
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

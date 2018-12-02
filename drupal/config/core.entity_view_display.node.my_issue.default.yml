@@ -1,0 +1,61 @@
+uuid: e56848ab-3186-4d23-9eac-fc7c11e122cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_my_issue.default
+    - field.field.node.my_issue.body
+    - field.field.node.my_issue.comment_node_my_issue
+    - field.field.node.my_issue.field_images
+    - field.field.node.my_issue.field_issue_tags
+    - field.field.node.my_issue.upload
+    - node.type.my_issue
+  module:
+    - comment
+    - file
+    - text
+    - user
+id: node.my_issue.default
+targetEntityType: node
+bundle: my_issue
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_my_issue:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_issue_tags:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    type: file_default
+    weight: 102
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_images: true

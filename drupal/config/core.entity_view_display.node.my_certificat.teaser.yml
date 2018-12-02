@@ -1,0 +1,30 @@
+uuid: eafe8a7e-24d1-4383-b798-6fafb88681a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.my_certificat.body
+    - node.type.my_certificat
+  module:
+    - text
+    - user
+id: node.my_certificat.teaser
+targetEntityType: node
+bundle: my_certificat
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

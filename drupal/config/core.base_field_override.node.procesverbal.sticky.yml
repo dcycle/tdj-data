@@ -1,0 +1,22 @@
+uuid: 235a9126-22c1-4ccf-8974-c18ef095ab07
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.procesverbal
+id: node.procesverbal.sticky
+field_name: sticky
+entity_type: node
+bundle: procesverbal
+label: 'Sticky at the top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,24 @@
+uuid: d8909eca-2bab-47c2-b532-5b93f2e56a88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_block_node_category
+    - node.type.blocknode
+id: node.blocknode.field_block_node_category
+field_name: field_block_node_category
+entity_type: node
+bundle: blocknode
+label: 'Block Node Category'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      - field_block_node_category
+    auto_create: true
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 062c2568-a21d-481f-af5f-08bcfdd423d5
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - amoreira
+id: system_1
+theme: amoreira
+region: ''
+weight: -9
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,21 @@
+uuid: cd353eff-2c17-453f-a814-77356a511c57
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_tdj_projet_groupe
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_tdj_projet_groupe.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_tdj_projet_groupe
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

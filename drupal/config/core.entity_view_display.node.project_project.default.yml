@@ -1,0 +1,88 @@
+uuid: cfffe77f-2046-412a-a3ce-ee052c78fb4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_project_project.default
+    - field.field.node.project_project.body
+    - field.field.node.project_project.comment_node_project_project
+    - field.field.node.project_project.field_images
+    - field.field.node.project_project.field_my_documents
+    - field.field.node.project_project.field_my_non_public_docs
+    - field.field.node.project_project.field_project_types
+    - field.field.node.project_project.field_tdj_desc
+    - field.field.node.project_project.field_tdj_montant
+    - field.field.node.project_project.upload
+    - node.type.project_project
+  module:
+    - comment
+    - file
+    - text
+    - user
+id: node.project_project.default
+targetEntityType: node
+bundle: project_project
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_project_project:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 36
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_project_types:
+    label: hidden
+    type: entity_reference_label
+    weight: 20
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_tdj_desc:
+    label: above
+    weight: 40
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tdj_montant:
+    label: above
+    weight: 34
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    type: file_default
+    weight: 102
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_images: true
+  field_my_non_public_docs: true

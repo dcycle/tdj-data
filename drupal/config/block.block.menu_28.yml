@@ -1,0 +1,18 @@
+uuid: 4344a853-a4d8-4d9a-8e5b-df3904c843d1
+langcode: en
+status: false
+dependencies:
+  theme:
+    - fusion_starter
+id: menu_28
+theme: fusion_starter
+region: ''
+weight: -3
+provider: null
+plugin: 'system_menu_block:menu-gauche'
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+visibility: {  }

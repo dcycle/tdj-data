@@ -1,0 +1,19 @@
+uuid: d683e73b-923f-44fd-bf89-3502c4b8a855
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adopte
+    - node.type.procesverbal
+id: node.procesverbal.field_adopte
+field_name: field_adopte
+entity_type: node
+bundle: procesverbal
+label: Adopté
+description: '<p>Indique si ce PV a &eacute;t&eacute; adopt&eacute; et si oui, &agrave; quelle date.</p>'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,23 @@
+uuid: f26c6af7-3260-4cd7-8c49-202b3ae9b78a
+langcode: en
+status: true
+dependencies: {  }
+name: tdj_image_ressource
+label: tdj_image_ressource
+effects:
+  aec09e6e-5deb-4ec2-a98d-4ce3d4076fff:
+    uuid: aec09e6e-5deb-4ec2-a98d-4ce3d4076fff
+    id: image_scale
+    weight: 0
+    data:
+      width: 300
+      height: null
+      upscale: true
+  c652b0c2-4d48-4285-9416-51c6f82b23f4:
+    uuid: c652b0c2-4d48-4285-9416-51c6f82b23f4
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 100
+      height: 75
+      anchor: center-center

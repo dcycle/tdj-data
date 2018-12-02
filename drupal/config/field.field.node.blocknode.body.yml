@@ -1,0 +1,22 @@
+uuid: b51f011f-476b-492a-8cc4-fc7e5c470a82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.blocknode
+  module:
+    - text
+id: node.blocknode.body
+field_name: body
+entity_type: node
+bundle: blocknode
+label: Corps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

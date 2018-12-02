@@ -1,0 +1,27 @@
+uuid: 966272f5-0b8b-4d44-8ef1-6a6b5a9d581a
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_tdj_projet_groupe
+    - field.field.comment.comment_node_tdj_projet_groupe.comment_body
+  module:
+    - text
+id: comment.comment_node_tdj_projet_groupe.default
+targetEntityType: comment
+bundle: comment_node_tdj_projet_groupe
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

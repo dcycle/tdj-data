@@ -1,0 +1,20 @@
+uuid: 63fc2eb1-23f3-4297-89e5-a3e8cd8147f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_tdj_projet_groupe
+field_name: comment_node_tdj_projet_groupe
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_tdj_projet_groupe
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

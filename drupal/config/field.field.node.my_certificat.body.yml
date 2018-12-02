@@ -1,0 +1,22 @@
+uuid: 1f2b7a4e-47d9-4f2d-86c1-f4ea19025503
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.my_certificat
+  module:
+    - text
+id: node.my_certificat.body
+field_name: body
+entity_type: node
+bundle: my_certificat
+label: Corps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

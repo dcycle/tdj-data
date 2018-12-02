@@ -1,0 +1,44 @@
+uuid: 4171018a-7d7f-4a27-9d08-3115f04af0f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.faq.body
+    - field.field.node.faq.comment_node_faq
+    - field.field.node.faq.field_images
+    - field.field.node.faq.field_my_documents
+    - node.type.faq
+  module:
+    - file
+    - text
+    - user
+id: node.faq.teaser
+targetEntityType: node
+bundle: faq
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 32
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_faq: true
+  field_images: true

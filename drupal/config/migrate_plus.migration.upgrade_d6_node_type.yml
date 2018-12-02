@@ -1,0 +1,38 @@
+uuid: 61ef4059-42f1-40f3-8cce-a47c635b1c24
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_type
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Configuration
+migration_group: migrate_drupal_6
+label: 'Node type configuration'
+source:
+  plugin: d6_node_type
+  constants:
+    preview: 1
+    create_body: false
+process:
+  type: type
+  name: name
+  module: module
+  description: description
+  help: help
+  title_label: title_label
+  preview_mode: constants/preview
+  display_submitted: display_submitted
+  new_revision: options/revision
+  settings/node/options: options
+  create_body: has_body
+  create_body_label: body_label
+  third_party_settings/menu_ui/available_menus: available_menus
+  third_party_settings/menu_ui/parent: parent
+destination:
+  plugin: 'entity:node_type'
+migration_dependencies:
+  required: {  }
+  optional: {  }

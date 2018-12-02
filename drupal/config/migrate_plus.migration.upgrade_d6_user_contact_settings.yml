@@ -1,0 +1,32 @@
+uuid: 98dd2f6d-445a-4d7f-827d-42379fc14263
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_user_contact_settings
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Content
+migration_group: migrate_drupal_6
+label: 'User contact settings'
+source:
+  plugin: d6_user
+  constants:
+    key: contact
+    module: contact
+process:
+  uid: uid
+  key: constants/key
+  module: constants/module
+  settings:
+    plugin: skip_row_if_not_set
+    index: contact
+    source: data
+destination:
+  plugin: user_data
+migration_dependencies:
+  required:
+    - upgrade_d6_user
+  optional: {  }

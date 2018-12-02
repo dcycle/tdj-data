@@ -1,0 +1,27 @@
+uuid: acc14458-ba17-4749-a93f-01f184db6809
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_my_certificat
+    - field.field.comment.comment_node_my_certificat.comment_body
+  module:
+    - text
+id: comment.comment_node_my_certificat.default
+targetEntityType: comment
+bundle: comment_node_my_certificat
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

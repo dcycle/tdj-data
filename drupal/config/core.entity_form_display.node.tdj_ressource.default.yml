@@ -1,0 +1,128 @@
+uuid: 4d8039c4-5c9b-43dc-a3a0-725a05b6af32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tdj_ressource.body
+    - field.field.node.tdj_ressource.comment_node_tdj_ressource
+    - field.field.node.tdj_ressource.field_categorie_de_ressrouce
+    - field.field.node.tdj_ressource.field_my_documents
+    - field.field.node.tdj_ressource.field_tdj_liens
+    - field.field.node.tdj_ressource.field_tdj_resource_image
+    - field.field.node.tdj_ressource.upload
+    - image.style.thumbnail
+    - node.type.tdj_ressource
+  module:
+    - comment
+    - file
+    - image
+    - link
+    - path
+    - text
+id: node.tdj_ressource.default
+targetEntityType: node
+bundle: tdj_ressource
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  comment_node_tdj_ressource:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_categorie_de_ressrouce:
+    type: options_select
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    weight: -3
+    type: file_generic
+    settings:
+      progress_indicator: bar
+    third_party_settings: {  }
+    region: content
+  field_tdj_liens:
+    weight: -2
+    type: link_default
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    region: content
+  field_tdj_resource_image:
+    weight: -4
+    type: image_image
+    settings:
+      progress_indicator: bar
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  upload:
+    settings:
+      progress_indicator: throbber
+    type: file_generic
+    weight: 122
+    third_party_settings: {  }
+    region: content
+hidden: {  }

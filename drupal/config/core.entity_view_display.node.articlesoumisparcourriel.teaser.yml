@@ -1,0 +1,41 @@
+uuid: 1e9ebcf3-60f5-4105-a4de-0146345804ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.articlesoumisparcourriel.body
+    - field.field.node.articlesoumisparcourriel.field_images
+    - node.type.articlesoumisparcourriel
+  module:
+    - image
+    - text
+    - user
+id: node.articlesoumisparcourriel.teaser
+targetEntityType: node
+bundle: articlesoumisparcourriel
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_images:
+    label: above
+    weight: 2
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

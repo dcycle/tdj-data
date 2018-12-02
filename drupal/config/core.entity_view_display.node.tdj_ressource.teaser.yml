@@ -1,0 +1,67 @@
+uuid: ebaeb65e-a492-4ac1-80a8-f15e758d4b95
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tdj_ressource.body
+    - field.field.node.tdj_ressource.comment_node_tdj_ressource
+    - field.field.node.tdj_ressource.field_my_documents
+    - field.field.node.tdj_ressource.field_tdj_liens
+    - field.field.node.tdj_ressource.field_tdj_resource_image
+    - node.type.tdj_ressource
+  module:
+    - file
+    - image
+    - link
+    - text
+    - user
+id: node.tdj_ressource.teaser
+targetEntityType: node
+bundle: tdj_ressource
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: -3
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_tdj_liens:
+    label: above
+    weight: -2
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    region: content
+  field_tdj_resource_image:
+    label: above
+    weight: -4
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_tdj_ressource: true

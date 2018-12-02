@@ -1,0 +1,32 @@
+uuid: 38bebdd2-0166-4bca-b1a5-cc78c16f4441
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+    - user
+  theme:
+    - wilderness
+id: user_21
+theme: wilderness
+region: ''
+weight: -7
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: ''
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      '': null
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    negate: false

@@ -1,0 +1,33 @@
+uuid: 2f26dd9c-1f36-42e0-9415-5ec8249b3708
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.profile.comment_node_profile
+    - field.field.node.profile.field_my_tdj_portrait
+    - field.field.node.profile.field_my_tdj_profile_motivation
+    - node.type.profile
+  module:
+    - text
+    - user
+id: node.profile.teaser
+targetEntityType: node
+bundle: profile
+mode: teaser
+content:
+  field_my_tdj_profile_motivation:
+    label: above
+    weight: -1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_profile: true
+  field_my_tdj_portrait: true

@@ -1,0 +1,56 @@
+uuid: ea188451-232f-4db6-b36d-172759767708
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_articlesoumisparcourriel
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Content
+migration_group: migrate_drupal_6
+label: 'Nodes (articlesoumisparcourriel)'
+source:
+  plugin: d6_node
+  node_type: articlesoumisparcourriel
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: migration_lookup
+    migration: upgrade_d6_filter_format
+    source: format
+  body/value: body
+  body/summary: teaser
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_images:
+    plugin: d6_field_file
+    source: field_images
+destination:
+  plugin: 'entity:node'
+  default_bundle: articlesoumisparcourriel
+migration_dependencies:
+  required:
+    - upgrade_d6_user
+    - upgrade_d6_node_type
+    - upgrade_d6_node_settings
+    - upgrade_d6_filter_format
+  optional:
+    - upgrade_d6_field_instance_widget_settings
+    - upgrade_d6_field_formatter_settings
+    - upgrade_d6_upload_field_instance
+    - upgrade_d6_filter_format

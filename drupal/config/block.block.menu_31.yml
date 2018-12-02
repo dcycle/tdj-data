@@ -1,0 +1,18 @@
+uuid: ccdef410-994e-4922-94dd-54ca0b1861ea
+langcode: en
+status: true
+dependencies:
+  theme:
+    - my_custom_theme
+id: menu_31
+theme: my_custom_theme
+region: content
+weight: -36
+provider: null
+plugin: 'system_menu_block:primary-links'
+settings:
+  id: broken
+  label: '<none>'
+  provider: core
+  label_display: visible
+visibility: {  }

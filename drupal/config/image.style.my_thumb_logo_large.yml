@@ -1,0 +1,15 @@
+uuid: 4c2d1200-8ae1-46ab-8719-2f37c5d12321
+langcode: en
+status: true
+dependencies: {  }
+name: my_thumb_logo_large
+label: my_thumb_logo_large
+effects:
+  854a4e6d-685c-4ac2-a1ba-1d64d56ec277:
+    uuid: 854a4e6d-685c-4ac2-a1ba-1d64d56ec277
+    id: image_scale
+    weight: 0
+    data:
+      width: null
+      height: 150
+      upscale: true

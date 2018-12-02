@@ -1,0 +1,18 @@
+uuid: 46c86e21-02f0-462f-8cb7-1432504814ac
+langcode: en
+status: false
+dependencies:
+  theme:
+    - wilderness
+id: menu_34
+theme: wilderness
+region: ''
+weight: -3
+provider: null
+plugin: 'system_menu_block:menu-gauche'
+settings:
+  id: broken
+  label: ''
+  provider: core
+  label_display: '0'
+visibility: {  }

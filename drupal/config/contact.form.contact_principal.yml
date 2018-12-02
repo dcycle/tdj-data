@@ -1,0 +1,12 @@
+uuid: 5cdbf79f-c1c6-4e8e-9ae4-7c930ad9359a
+langcode: en
+status: true
+dependencies: {  }
+id: contact_principal
+label: 'contact principal'
+recipients:
+  - albert.albala@reforestation.net
+reply: ''
+weight: 0
+message: null
+redirect: null

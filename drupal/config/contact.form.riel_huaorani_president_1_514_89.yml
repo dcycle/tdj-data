@@ -1,0 +1,12 @@
+uuid: c5c75d9e-e50b-4322-9028-26ffe7b49123
+langcode: en
+status: true
+dependencies: {  }
+id: riel_huaorani_president_1_514_89
+label: 'Riel Huaorani, Président 1-514-890-4445'
+recipients:
+  - terredesjeunes@hotmail.com
+reply: ''
+weight: 0
+message: null
+redirect: null

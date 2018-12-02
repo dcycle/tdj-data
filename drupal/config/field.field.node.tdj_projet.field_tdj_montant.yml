@@ -1,0 +1,19 @@
+uuid: d64f4db3-cc25-4c67-b6fc-353eeb3894a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tdj_montant
+    - node.type.tdj_projet
+id: node.tdj_projet.field_tdj_montant
+field_name: field_tdj_montant
+entity_type: node
+bundle: tdj_projet
+label: 'Budget en dollars US'
+description: 'Montant en dollars US'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

@@ -1,0 +1,12 @@
+uuid: 1554abbb-cd62-4d01-a4cf-107f2f9fe1c0
+langcode: en
+status: true
+dependencies: {  }
+id: terre_des_jeunes_colombia
+label: 'Terre des jeunes Colombia'
+recipients:
+  - reyesannie@hotmail.com
+reply: ''
+weight: 0
+message: null
+redirect: null

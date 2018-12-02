@@ -1,0 +1,8 @@
+uuid: 54f49841-893b-4341-abe4-aa712c90cde7
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_my_certificat
+label: 'Certificat comment'
+target_entity_type_id: node
+description: null

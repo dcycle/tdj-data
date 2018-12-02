@@ -1,0 +1,22 @@
+uuid: 949ae2b6-59f0-4d68-a745-b669d5ef3963
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.my_certificat
+id: node.my_certificat.sticky
+field_name: sticky
+entity_type: node
+bundle: my_certificat
+label: 'Sticky at the top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

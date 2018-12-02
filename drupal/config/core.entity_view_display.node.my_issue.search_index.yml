@@ -1,0 +1,34 @@
+uuid: 223c828f-e996-4035-b3fd-a79f975e2402
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.my_issue.body
+    - field.field.node.my_issue.comment_node_my_issue
+    - field.field.node.my_issue.field_images
+    - node.type.my_issue
+  module:
+    - file
+    - user
+id: node.my_issue.search_index
+targetEntityType: node
+bundle: my_issue
+mode: search_index
+content:
+  field_images:
+    label: hidden
+    weight: 102
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_my_issue: true

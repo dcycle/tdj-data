@@ -1,0 +1,47 @@
+uuid: c74d77a1-59c8-4c9b-a3f8-035f8d170780
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_revision_my_certificat
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Content
+migration_group: migrate_drupal_6
+label: 'Node revisions (my_certificat)'
+source:
+  plugin: d6_node_revision
+  node_type: my_certificat
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: migration_lookup
+    migration: upgrade_d6_filter_format
+    source: format
+  body/value: body
+  body/summary: teaser
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: my_certificat
+migration_dependencies:
+  required:
+    - upgrade_d6_node_my_certificat
+  optional:
+    - upgrade_d6_filter_format

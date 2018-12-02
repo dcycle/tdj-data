@@ -1,0 +1,12 @@
+uuid: e1b9b2cb-b350-4802-b60a-bf61cd6e256f
+langcode: en
+status: true
+dependencies: {  }
+id: fenitra_madagascar_axel_
+label: "FENITRA Madagascar\t(Axel)"
+recipients:
+  - ifenitra@hotmail.com
+reply: ''
+weight: 0
+message: null
+redirect: null

@@ -1,0 +1,30 @@
+uuid: 78af18b4-070d-4757-982c-5eb644355507
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_my_translation_priority
+field_name: field_my_translation_priority
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: en
+      label: 'to translate to english'
+    -
+      value: fr
+      label: 'à traduire au français'
+    -
+      value: es
+      label: 'a traducir hacía español'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

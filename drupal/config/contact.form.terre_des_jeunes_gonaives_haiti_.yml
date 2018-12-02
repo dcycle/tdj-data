@@ -1,0 +1,12 @@
+uuid: 52dea2c8-a2f3-4f56-bafc-fbd28358b91f
+langcode: en
+status: true
+dependencies: {  }
+id: terre_des_jeunes_gonaives_haiti_
+label: 'Terre des jeunes Gonaïves (Haïti)'
+recipients:
+  - terredesjeunesorgo@hotmail.com
+reply: ''
+weight: 0
+message: null
+redirect: null

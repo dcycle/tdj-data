@@ -1,0 +1,24 @@
+uuid: 42f8b224-c98c-41f3-a39c-9f4481f75e65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categorie_de_ressrouce
+    - node.type.tdj_ressource
+id: node.tdj_ressource.field_categorie_de_ressrouce
+field_name: field_categorie_de_ressrouce
+entity_type: node
+bundle: tdj_ressource
+label: 'Catégorie de ressrouce'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      - field_categorie_de_ressrouce
+    auto_create: true
+field_type: entity_reference

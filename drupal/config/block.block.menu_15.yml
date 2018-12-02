@@ -1,0 +1,18 @@
+uuid: 6c7d7a63-45c1-42df-8f5c-c59e266ca8d1
+langcode: en
+status: false
+dependencies:
+  theme:
+    - reflections
+id: menu_15
+theme: reflections
+region: ''
+weight: -8
+provider: null
+plugin: 'system_menu_block:menu-gauche'
+settings:
+  id: broken
+  label: 'Antennes TDJ'
+  provider: core
+  label_display: visible
+visibility: {  }

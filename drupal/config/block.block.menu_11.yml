@@ -1,0 +1,18 @@
+uuid: bffaaf38-7cea-43e9-b4cb-7000ba7c175b
+langcode: en
+status: false
+dependencies:
+  theme:
+    - CesarDesign02
+id: menu_11
+theme: CesarDesign02
+region: ''
+weight: -9
+provider: null
+plugin: 'system_menu_block:menu-actions'
+settings:
+  id: broken
+  label: '<none>'
+  provider: core
+  label_display: visible
+visibility: {  }

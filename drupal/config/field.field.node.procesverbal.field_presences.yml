@@ -1,0 +1,19 @@
+uuid: ee15b7be-dbb4-4c93-bd4c-1130edfc9bbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_presences
+    - node.type.procesverbal
+id: node.procesverbal.field_presences
+field_name: field_presences
+entity_type: node
+bundle: procesverbal
+label: Présences
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

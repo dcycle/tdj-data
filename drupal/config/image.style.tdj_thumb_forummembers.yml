@@ -1,0 +1,23 @@
+uuid: 083821cd-acc7-4fd3-968a-395818fb50db
+langcode: en
+status: true
+dependencies: {  }
+name: tdj_thumb_forummembers
+label: tdj_thumb_forummembers
+effects:
+  3cd14776-fd33-4210-a4d7-ced0dd72910b:
+    uuid: 3cd14776-fd33-4210-a4d7-ced0dd72910b
+    id: image_scale
+    weight: 0
+    data:
+      width: 200
+      height: null
+      upscale: true
+  d809f9f0-8561-4bbb-a4ae-c73be8cf85db:
+    uuid: d809f9f0-8561-4bbb-a4ae-c73be8cf85db
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 40
+      height: 40
+      anchor: center-center

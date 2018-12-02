@@ -1,0 +1,22 @@
+uuid: 2a315206-a0c4-4501-ba4c-6a122ac9cd26
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tdj_projet
+id: node.tdj_projet.status
+field_name: status
+entity_type: node
+bundle: tdj_projet
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -1,0 +1,8 @@
+uuid: bbaf5285-be19-4509-a002-c054396ea3d3
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_procesverbal
+label: 'Procès verbal comment'
+target_entity_type_id: node
+description: null

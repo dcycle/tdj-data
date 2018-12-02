@@ -1,0 +1,27 @@
+uuid: 6e2e8d56-b5fd-45fc-98ab-a94224a54ad5
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_tdj_ressource
+    - field.field.comment.comment_node_tdj_ressource.comment_body
+  module:
+    - text
+id: comment.comment_node_tdj_ressource.default
+targetEntityType: comment
+bundle: comment_node_tdj_ressource
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

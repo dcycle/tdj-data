@@ -1,0 +1,18 @@
+uuid: a2d38f51-a249-471b-99ec-bf6a151230dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - primary-links
+    parent: 'primary-links:'
+name: Minisite
+type: minisite
+description: 'Minisite, par exemple "Sommet Togo 2015"'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

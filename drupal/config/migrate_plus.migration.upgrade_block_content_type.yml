@@ -1,0 +1,32 @@
+uuid: 35e910cd-657a-41b7-825d-9cdf3b3970ce
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_block_content_type
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_6
+label: 'Block content type'
+source:
+  plugin: embedded_data
+  data_rows:
+    -
+      id: basic
+      label: Basic
+  ids:
+    id:
+      type: string
+  source_module: block
+process:
+  id: id
+  label: label
+destination:
+  plugin: 'entity:block_content_type'
+migration_dependencies:
+  required: {  }
+  optional: {  }

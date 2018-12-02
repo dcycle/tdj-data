@@ -1,0 +1,23 @@
+uuid: a856fa94-db7e-4f09-bb3d-cafaa3b4bd68
+langcode: en
+status: true
+dependencies: {  }
+name: tdj_portrait
+label: tdj_portrait
+effects:
+  c970d8d0-d406-4e57-afce-c6d69a66ab08:
+    uuid: c970d8d0-d406-4e57-afce-c6d69a66ab08
+    id: image_scale
+    weight: 0
+    data:
+      width: null
+      height: 300
+      upscale: true
+  c825bf25-18b9-4f2d-b806-32c8cc7e61ad:
+    uuid: c825bf25-18b9-4f2d-b806-32c8cc7e61ad
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 138
+      height: 150
+      anchor: center-center

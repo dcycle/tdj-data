@@ -1,0 +1,59 @@
+uuid: f3829844-ed03-4a03-bafd-125c988e6609
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_webform.default
+    - field.field.node.webform.body
+    - field.field.node.webform.comment_node_webform
+    - field.field.node.webform.field_my_documents
+    - field.field.node.webform.upload
+    - node.type.webform
+  module:
+    - comment
+    - file
+    - text
+    - user
+id: node.webform.default
+targetEntityType: node
+bundle: webform
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_webform:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 32
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    type: file_default
+    weight: 102
+    third_party_settings: {  }
+    region: content
+hidden: {  }

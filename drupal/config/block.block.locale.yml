@@ -1,0 +1,18 @@
+uuid: 33429681-6226-4ffa-a4b4-53b7fd8c28a7
+langcode: en
+status: false
+dependencies:
+  theme:
+    - greg02
+id: locale
+theme: greg02
+region: ''
+weight: -27
+provider: null
+plugin: language_block
+settings:
+  id: broken
+  label: '<none>'
+  provider: core
+  label_display: visible
+visibility: {  }

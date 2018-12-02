@@ -1,0 +1,27 @@
+uuid: fd962de3-3771-45de-b488-d4f31d2fb20f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_documents
+    - node.type.tdj_projet_groupe
+  module:
+    - file
+id: node.tdj_projet_groupe.field_my_documents
+field_name: field_my_documents
+entity_type: node
+bundle: tdj_projet_groupe
+label: Documents
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: pdf
+  file_directory: ''
+  description_field: false
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

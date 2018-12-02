@@ -1,0 +1,48 @@
+uuid: 5d514fc3-158c-4160-8ecb-3075591b3b39
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.comment_node_page
+    - field.field.node.page.field_images
+    - field.field.node.page.field_my_documents
+    - field.field.node.page.field_my_non_public_docs
+    - field.field.node.page.field_my_translation_priority
+    - node.type.page
+  module:
+    - file
+    - text
+    - user
+_core:
+  default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 100
+    region: content
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_my_documents:
+    label: above
+    weight: 33
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 101
+    region: content
+hidden:
+  comment_node_page: true
+  field_images: true
+  field_my_non_public_docs: true
+  field_my_translation_priority: true

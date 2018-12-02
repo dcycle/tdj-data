@@ -1,0 +1,62 @@
+uuid: 47c5873f-91ad-46d8-8d2c-d674c7212738
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.tdj_projet.body
+    - field.field.node.tdj_projet.comment_node_tdj_projet
+    - field.field.node.tdj_projet.field_images
+    - field.field.node.tdj_projet.field_my_documents
+    - field.field.node.tdj_projet.field_my_non_public_docs
+    - field.field.node.tdj_projet.field_tdj_desc
+    - field.field.node.tdj_projet.field_tdj_montant
+    - node.type.tdj_projet
+  module:
+    - file
+    - text
+    - user
+id: node.tdj_projet.teaser
+targetEntityType: node
+bundle: tdj_projet
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 14
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_tdj_desc:
+    label: above
+    weight: 16
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tdj_montant:
+    label: above
+    weight: -1
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_tdj_projet: true
+  field_images: true
+  field_my_non_public_docs: true

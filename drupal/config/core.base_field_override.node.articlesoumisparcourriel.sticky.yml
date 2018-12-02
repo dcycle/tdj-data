@@ -1,0 +1,22 @@
+uuid: 2d38cbfd-c3df-4dd9-9158-ee4907da45cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.articlesoumisparcourriel
+id: node.articlesoumisparcourriel.sticky
+field_name: sticky
+entity_type: node
+bundle: articlesoumisparcourriel
+label: 'Sticky at the top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

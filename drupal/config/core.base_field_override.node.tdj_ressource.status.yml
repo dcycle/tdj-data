@@ -1,0 +1,22 @@
+uuid: a9a3e214-c338-4b7c-bbb3-4592ed3d69fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tdj_ressource
+id: node.tdj_ressource.status
+field_name: status
+entity_type: node
+bundle: tdj_ressource
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

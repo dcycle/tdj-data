@@ -1,0 +1,20 @@
+uuid: 442ac475-1849-45e3-8e16-c0fd7ac0885a
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_tdj_ressource
+field_name: comment_node_tdj_ressource
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_tdj_ressource
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

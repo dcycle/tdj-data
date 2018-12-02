@@ -1,0 +1,20 @@
+uuid: e948b133-a482-4445-82ee-44ee1aa7831b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_image_galleries
+field_name: field_image_galleries
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

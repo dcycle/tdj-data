@@ -1,0 +1,8 @@
+uuid: df93ef8f-26ff-44cb-894c-64e39eba6fc1
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_antenne
+label: 'Antenne comment'
+target_entity_type_id: node
+description: null

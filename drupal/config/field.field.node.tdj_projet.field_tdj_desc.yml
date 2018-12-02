@@ -1,0 +1,21 @@
+uuid: f5fe6ab0-6ca8-4042-88eb-b6a35ea86bb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tdj_desc
+    - node.type.tdj_projet
+  module:
+    - text
+id: node.tdj_projet.field_tdj_desc
+field_name: field_tdj_desc
+entity_type: node
+bundle: tdj_projet
+label: 'Description sommaire'
+description: 'Décrivez sommairement votre projet'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

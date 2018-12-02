@@ -1,0 +1,32 @@
+uuid: 61b18338-f540-4abf-a8e2-3c2f61f1b300
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.articlesoumisparcourriel.body
+    - field.field.node.articlesoumisparcourriel.field_images
+    - node.type.articlesoumisparcourriel
+  module:
+    - file
+    - user
+id: node.articlesoumisparcourriel.search_result
+targetEntityType: node
+bundle: articlesoumisparcourriel
+mode: search_result
+content:
+  field_images:
+    label: above
+    weight: 2
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true

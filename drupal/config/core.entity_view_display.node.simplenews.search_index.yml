@@ -1,0 +1,34 @@
+uuid: b440e994-480e-4ed0-8609-1ea87269807a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.simplenews.body
+    - field.field.node.simplenews.comment_node_simplenews
+    - field.field.node.simplenews.field_images
+    - node.type.simplenews
+  module:
+    - file
+    - user
+id: node.simplenews.search_index
+targetEntityType: node
+bundle: simplenews
+mode: search_index
+content:
+  field_images:
+    label: hidden
+    weight: 32
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_simplenews: true

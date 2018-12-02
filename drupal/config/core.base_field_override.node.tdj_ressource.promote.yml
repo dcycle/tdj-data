@@ -1,0 +1,22 @@
+uuid: 3e8f1da1-1bb1-404f-8237-a3daf18db73e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.tdj_ressource
+id: node.tdj_ressource.promote
+field_name: promote
+entity_type: node
+bundle: tdj_ressource
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

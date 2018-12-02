@@ -1,0 +1,27 @@
+uuid: 9d718b30-8dd3-4701-b274-e2927366bdc6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_non_public_docs
+    - node.type.page
+  module:
+    - file
+id: node.page.field_my_non_public_docs
+field_name: field_my_non_public_docs
+entity_type: node
+bundle: page
+label: 'Documents non-publics'
+description: 'par exemple l''original en photoshop d''un PNG'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'pdf zip png jpg'
+  file_directory: ''
+  description_field: false
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

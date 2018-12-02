@@ -1,0 +1,18 @@
+uuid: 05f7daf0-8487-4227-87c8-97101c972bac
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - primary-links
+    parent: 'primary-links:'
+name: 'Article soumis par courriel'
+type: articlesoumisparcourriel
+description: '<p>Ce type d''article sera cr&eacute;&eacute; lorsqu''un courriel sera envoy&eacute; par un utilisateur autoris&eacute; &agrave; l''adresse post@reforestation.net. En principe vous n''aurez pas &agrave; cr&eacute;er ce type d''article via le site lui-m&ecirc;me; ce sera fait automatiquement.</p>'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

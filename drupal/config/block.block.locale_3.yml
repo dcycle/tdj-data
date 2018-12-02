@@ -1,0 +1,18 @@
+uuid: a83051a7-aca3-412f-b21c-91484fa32797
+langcode: en
+status: true
+dependencies:
+  theme:
+    - my_custom_theme
+id: locale_3
+theme: my_custom_theme
+region: content
+weight: -35
+provider: null
+plugin: language_block
+settings:
+  id: broken
+  label: '<none>'
+  provider: core
+  label_display: visible
+visibility: {  }

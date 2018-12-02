@@ -1,0 +1,22 @@
+uuid: fa108214-f013-4410-a7ad-d0b912feb722
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.minisite
+id: node.minisite.status
+field_name: status
+entity_type: node
+bundle: minisite
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

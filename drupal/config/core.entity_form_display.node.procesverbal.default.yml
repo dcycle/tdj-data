@@ -1,0 +1,135 @@
+uuid: 4aff5855-71e4-44ab-847d-ef4a81d716ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.procesverbal.body
+    - field.field.node.procesverbal.comment_node_procesverbal
+    - field.field.node.procesverbal.field_adopte
+    - field.field.node.procesverbal.field_datedebut
+    - field.field.node.procesverbal.field_my_documents
+    - field.field.node.procesverbal.field_odj
+    - field.field.node.procesverbal.field_presences
+    - field.field.node.procesverbal.upload
+    - node.type.procesverbal
+  module:
+    - comment
+    - datetime
+    - file
+    - path
+    - text
+id: node.procesverbal.default
+targetEntityType: node
+bundle: procesverbal
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  comment_node_procesverbal:
+    type: comment_default
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_adopte:
+    weight: -3
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_datedebut:
+    weight: -1
+    type: datetime_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    weight: 1
+    type: file_generic
+    settings:
+      progress_indicator: bar
+    third_party_settings: {  }
+    region: content
+  field_odj:
+    weight: 0
+    type: text_textarea
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_presences:
+    weight: -2
+    type: text_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  upload:
+    settings:
+      progress_indicator: throbber
+    type: file_generic
+    weight: 122
+    third_party_settings: {  }
+    region: content
+hidden: {  }

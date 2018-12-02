@@ -1,0 +1,84 @@
+uuid: 81bd9893-75f6-4a50-8324-9a3a10913207
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_menu_links
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Content
+migration_group: migrate_drupal_6
+label: 'Menu links'
+source:
+  plugin: menu_link
+process:
+  id: mlid
+  title: link_title
+  description: description
+  menu_name:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d6_menu
+      source: menu_name
+    -
+      plugin: skip_on_empty
+      method: row
+    -
+      plugin: static_map
+      map:
+        management: admin
+      bypass: true
+  link/uri:
+    plugin: link_uri
+    source:
+      - link_path
+  link/options: options
+  route:
+    plugin: route
+    source:
+      - link_path
+      - options
+  route_name: '@route/route_name'
+  route_parameters: '@route/route_parameters'
+  url: '@route/url'
+  options: '@route/options'
+  external: external
+  weight: weight
+  expanded: expanded
+  enabled: enabled
+  parent:
+    plugin: menu_link_parent
+    source:
+      - plid
+      - '@menu_name'
+      - parent_link_path
+  changed: updated
+destination:
+  plugin: 'entity:menu_link_content'
+  default_bundle: menu_link_content
+  no_stub: true
+migration_dependencies:
+  required:
+    - upgrade_d6_menu
+  optional:
+    - upgrade_d6_node_antenne
+    - upgrade_d6_node_articlesoumisparcourriel
+    - upgrade_d6_node_blocknode
+    - upgrade_d6_node_faq
+    - upgrade_d6_node_image
+    - upgrade_d6_node_minisite
+    - upgrade_d6_node_my_certificat
+    - upgrade_d6_node_my_issue
+    - upgrade_d6_node_page
+    - upgrade_d6_node_procesverbal
+    - upgrade_d6_node_profile
+    - upgrade_d6_node_project_project
+    - upgrade_d6_node_simplenews
+    - upgrade_d6_node_story
+    - upgrade_d6_node_tdj_projet
+    - upgrade_d6_node_tdj_projet_groupe
+    - upgrade_d6_node_tdj_ressource
+    - upgrade_d6_node_webform
+    - upgrade_d6_menu

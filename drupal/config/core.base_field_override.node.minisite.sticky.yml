@@ -1,0 +1,22 @@
+uuid: f99abedf-9713-4bd5-b6aa-f6bc9eebffe5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.minisite
+id: node.minisite.sticky
+field_name: sticky
+entity_type: node
+bundle: minisite
+label: 'Sticky at the top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

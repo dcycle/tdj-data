@@ -1,0 +1,32 @@
+uuid: 905d7c77-d3eb-445b-ab50-41255b422bba
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.articlesoumisparcourriel.body
+    - field.field.node.articlesoumisparcourriel.field_images
+    - node.type.articlesoumisparcourriel
+  module:
+    - file
+    - user
+id: node.articlesoumisparcourriel.rss
+targetEntityType: node
+bundle: articlesoumisparcourriel
+mode: rss
+content:
+  field_images:
+    label: above
+    weight: 2
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true

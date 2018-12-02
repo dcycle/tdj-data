@@ -1,0 +1,21 @@
+uuid: 3de5a133-5969-4253-9c43-9c4c5c9f9db9
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_procesverbal
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_procesverbal.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_procesverbal
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,69 @@
+uuid: 92cc901e-b6cf-4b29-9141-4edce9618c8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.project_project.body
+    - field.field.node.project_project.comment_node_project_project
+    - field.field.node.project_project.field_images
+    - field.field.node.project_project.field_my_documents
+    - field.field.node.project_project.field_my_non_public_docs
+    - field.field.node.project_project.field_tdj_desc
+    - field.field.node.project_project.field_tdj_montant
+    - node.type.project_project
+  module:
+    - file
+    - text
+    - user
+id: node.project_project.search_index
+targetEntityType: node
+bundle: project_project
+mode: search_index
+content:
+  field_images:
+    label: hidden
+    weight: 32
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 36
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_my_non_public_docs:
+    label: hidden
+    weight: 38
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_tdj_desc:
+    label: above
+    weight: 40
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_tdj_montant:
+    label: above
+    weight: 34
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_project_project: true

@@ -1,0 +1,114 @@
+uuid: f9cdbc6f-1913-476a-9d72-a657da83fbb1
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_revision_antenne
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Content
+migration_group: migrate_drupal_6
+label: 'Node revisions (antenne)'
+source:
+  plugin: d6_node_revision
+  node_type: antenne
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: migration_lookup
+    migration: upgrade_d6_filter_format
+    source: format
+  body/value: body
+  body/summary: teaser
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_mygeolocation: field_mygeolocation
+  field_image:
+    plugin: d6_field_file
+    source: field_image
+  field_my_documents:
+    plugin: d6_field_file
+    source: field_my_documents
+  field_my_tdj_pays:
+    plugin: sub_process
+    source: field_my_tdj_pays
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration: upgrade_d6_filter_format
+          source: format
+  field_my_tdj_flag:
+    plugin: d6_field_file
+    source: field_my_tdj_flag
+  field_my_tdj_activite:
+    plugin: sub_process
+    source: field_my_tdj_activite
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration: upgrade_d6_filter_format
+          source: format
+  field_type_antenne:
+    plugin: sub_process
+    source: field_type_antenne
+    process:
+      value: value
+      format:
+        -
+          plugin: static_map
+          bypass: true
+          source: format
+          map:
+            - null
+        -
+          plugin: skip_on_empty
+          method: process
+        -
+          plugin: migration
+          migration: upgrade_d6_filter_format
+          source: format
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: antenne
+migration_dependencies:
+  required:
+    - upgrade_d6_node_antenne
+  optional:
+    - upgrade_d6_filter_format

@@ -1,0 +1,95 @@
+uuid: 3e3769db-b2e5-469b-ad27-079833fa83b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.articlesoumisparcourriel.body
+    - field.field.node.articlesoumisparcourriel.field_images
+    - field.field.node.articlesoumisparcourriel.upload
+    - image.style.thumbnail
+    - node.type.articlesoumisparcourriel
+  module:
+    - file
+    - image
+    - path
+    - text
+id: node.articlesoumisparcourriel.default
+targetEntityType: node
+bundle: articlesoumisparcourriel
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_images:
+    weight: 2
+    type: image_image
+    settings:
+      progress_indicator: bar
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+  upload:
+    settings:
+      progress_indicator: throbber
+    type: file_generic
+    weight: 122
+    third_party_settings: {  }
+    region: content
+hidden: {  }

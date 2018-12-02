@@ -1,0 +1,42 @@
+uuid: 4f7c3a00-2b7b-4dc1-8784-f37f7ddc5977
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webform.body
+    - field.field.node.webform.comment_node_webform
+    - field.field.node.webform.field_my_documents
+    - node.type.webform
+  module:
+    - file
+    - text
+    - user
+id: node.webform.teaser
+targetEntityType: node
+bundle: webform
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 32
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_webform: true

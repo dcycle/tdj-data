@@ -1,0 +1,70 @@
+uuid: f9cd4008-8eea-484f-a6d1-d42ce1a1b466
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.antenne.body
+    - field.field.node.antenne.comment_node_antenne
+    - field.field.node.antenne.field_image
+    - field.field.node.antenne.field_my_documents
+    - field.field.node.antenne.field_my_tdj_activite
+    - field.field.node.antenne.field_my_tdj_flag
+    - field.field.node.antenne.field_my_tdj_pays
+    - field.field.node.antenne.field_type_antenne
+    - node.type.antenne
+  module:
+    - file
+    - text
+    - user
+id: node.antenne.teaser
+targetEntityType: node
+bundle: antenne
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 54
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_my_tdj_activite:
+    label: above
+    weight: 53
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_my_tdj_pays:
+    label: above
+    weight: 52
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_type_antenne:
+    label: above
+    weight: 32
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_antenne: true
+  field_image: true
+  field_my_tdj_flag: true

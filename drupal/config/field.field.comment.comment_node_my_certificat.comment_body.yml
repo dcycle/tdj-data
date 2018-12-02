@@ -1,0 +1,21 @@
+uuid: 8f597b62-8157-42fd-b9f6-3fd32f3cfcbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_my_certificat
+    - field.storage.comment.comment_body
+  module:
+    - text
+id: comment.comment_node_my_certificat.comment_body
+field_name: comment_body
+entity_type: comment
+bundle: comment_node_my_certificat
+label: Comment
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

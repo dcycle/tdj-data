@@ -1,0 +1,94 @@
+uuid: 63ed7a73-97bb-4262-9e8f-b92be8733a42
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_procesverbal.default
+    - field.field.node.procesverbal.body
+    - field.field.node.procesverbal.comment_node_procesverbal
+    - field.field.node.procesverbal.field_adopte
+    - field.field.node.procesverbal.field_datedebut
+    - field.field.node.procesverbal.field_my_documents
+    - field.field.node.procesverbal.field_odj
+    - field.field.node.procesverbal.field_presences
+    - field.field.node.procesverbal.upload
+    - node.type.procesverbal
+  module:
+    - comment
+    - datetime
+    - file
+    - text
+    - user
+id: node.procesverbal.default
+targetEntityType: node
+bundle: procesverbal
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_node_procesverbal:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_adopte:
+    label: above
+    weight: -3
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_datedebut:
+    label: above
+    weight: -1
+    type: datetime_default
+    settings:
+      format_type: fallback
+      timezone_override: ''
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 1
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_odj:
+    label: above
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_presences:
+    label: above
+    weight: -2
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  upload:
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    type: file_default
+    weight: 102
+    third_party_settings: {  }
+    region: content
+hidden: {  }

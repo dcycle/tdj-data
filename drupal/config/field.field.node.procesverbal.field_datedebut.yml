@@ -1,0 +1,21 @@
+uuid: 3e037c5b-eec4-4f48-b11b-664056c8dce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datedebut
+    - node.type.procesverbal
+  module:
+    - datetime
+id: node.procesverbal.field_datedebut
+field_name: field_datedebut
+entity_type: node
+bundle: procesverbal
+label: 'Date début'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,22 @@
+uuid: 10526b45-fc55-4d41-b32e-04713b34f3eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.antenne
+id: node.antenne.status
+field_name: status
+entity_type: node
+bundle: antenne
+label: 'Publishing status'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

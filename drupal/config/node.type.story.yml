@@ -1,0 +1,18 @@
+uuid: 2ea5ac15-e444-440e-9d60-64f53fe45389
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - primary-links
+    parent: 'primary-links:'
+name: Texte
+type: story
+description: '<p>A <em>story</em>, similar in form to a <em>page</em>, is ideal for creating and displaying content that informs or engages website visitors. Press releases, site announcements, and informal blog-like entries may all be created with a <em>story</em> entry. By default, a <em>story</em> entry is automatically featured on the site''s initial home page, and provides the ability to post comments.</p>'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

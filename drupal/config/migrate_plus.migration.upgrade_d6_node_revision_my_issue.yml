@@ -1,0 +1,50 @@
+uuid: 4605c1cf-d754-440d-b143-28b21990a9c2
+langcode: en
+status: true
+dependencies: {  }
+id: upgrade_d6_node_revision_my_issue
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 6'
+  - Content
+migration_group: migrate_drupal_6
+label: 'Node revisions (my_issue)'
+source:
+  plugin: d6_node_revision
+  node_type: my_issue
+process:
+  nid: nid
+  vid: vid
+  langcode:
+    plugin: default_value
+    source: language
+    default_value: und
+  title: title
+  uid: node_uid
+  status: status
+  created: created
+  changed: changed
+  promote: promote
+  sticky: sticky
+  body/format:
+    plugin: migration_lookup
+    migration: upgrade_d6_filter_format
+    source: format
+  body/value: body
+  body/summary: teaser
+  revision_uid: revision_uid
+  revision_log: log
+  revision_timestamp: timestamp
+  field_images:
+    plugin: d6_field_file
+    source: field_images
+destination:
+  plugin: 'entity_revision:node'
+  default_bundle: my_issue
+migration_dependencies:
+  required:
+    - upgrade_d6_node_my_issue
+  optional:
+    - upgrade_d6_filter_format

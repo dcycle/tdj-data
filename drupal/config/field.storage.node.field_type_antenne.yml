@@ -1,0 +1,39 @@
+uuid: 9d807d34-8fa6-44af-a277-9cb2781dfbb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_type_antenne
+field_name: field_type_antenne
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: racine
+      label: 'racine transnationale'
+    -
+      value: tronc
+      label: 'tronc continental'
+    -
+      value: branche
+      label: 'branche nationale'
+    -
+      value: rameau
+      label: 'rameau régional'
+    -
+      value: ramille
+      label: 'ramille municipale'
+    -
+      value: bourgeon
+      label: 'bourgeon local'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

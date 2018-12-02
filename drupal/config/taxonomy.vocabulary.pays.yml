@@ -1,0 +1,9 @@
+uuid: d92dc5b7-270c-4da1-b687-4de64c07f69a
+langcode: en
+status: true
+dependencies: {  }
+name: Pays
+vid: pays
+description: '<p>Le pays auquel cet article se rapporte</p>'
+hierarchy: 1
+weight: 0

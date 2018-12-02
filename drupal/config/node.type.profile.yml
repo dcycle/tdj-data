@@ -1,0 +1,18 @@
+uuid: ca90b3b4-e6ca-4ac1-ba5e-2a622ab387ad
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - primary-links
+    parent: 'primary-links:'
+name: Profil
+type: profile
+description: 'A user profile built as content.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

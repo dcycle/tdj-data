@@ -1,0 +1,27 @@
+uuid: 77e1ede7-bf4d-43d3-9023-2fff97d01253
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_procesverbal
+    - field.field.comment.comment_node_procesverbal.comment_body
+  module:
+    - text
+id: comment.comment_node_procesverbal.default
+targetEntityType: comment
+bundle: comment_node_procesverbal
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

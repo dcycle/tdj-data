@@ -1,0 +1,20 @@
+uuid: 371281af-8292-48bc-b1c8-848f8908935f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - CesarDesign02
+id: system_3
+theme: CesarDesign02
+region: ''
+weight: -9
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

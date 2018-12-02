@@ -1,0 +1,18 @@
+uuid: bb8c3d9c-f3b9-41a8-847e-b12eb7ea052e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - primary-links
+    parent: 'primary-links:'
+name: 'Parution du bulletin'
+type: simplenews
+description: 'Une parution du bulletin est envoyée à tous les abonnés par courriel'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

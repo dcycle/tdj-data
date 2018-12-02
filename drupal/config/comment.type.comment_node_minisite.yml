@@ -1,0 +1,8 @@
+uuid: 83f681ab-a18b-4c67-bca3-bc92abe2dbe3
+langcode: en
+status: true
+dependencies: {  }
+id: comment_node_minisite
+label: 'Minisite comment'
+target_entity_type_id: node
+description: null

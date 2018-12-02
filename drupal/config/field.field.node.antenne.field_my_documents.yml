@@ -1,0 +1,27 @@
+uuid: 4a617678-df80-47ba-a3db-2fb76a1771f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_my_documents
+    - node.type.antenne
+  module:
+    - file
+id: node.antenne.field_my_documents
+field_name: field_my_documents
+entity_type: node
+bundle: antenne
+label: Documents
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'pdf jpg png'
+  file_directory: ''
+  description_field: false
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

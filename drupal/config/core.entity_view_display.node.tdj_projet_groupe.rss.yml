@@ -1,0 +1,43 @@
+uuid: b733aacc-07a3-4edb-b8d9-19b10b901114
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.tdj_projet_groupe.body
+    - field.field.node.tdj_projet_groupe.comment_node_tdj_projet_groupe
+    - field.field.node.tdj_projet_groupe.field_images
+    - field.field.node.tdj_projet_groupe.field_my_documents
+    - node.type.tdj_projet_groupe
+  module:
+    - file
+    - user
+id: node.tdj_projet_groupe.rss
+targetEntityType: node
+bundle: tdj_projet_groupe
+mode: rss
+content:
+  field_images:
+    label: hidden
+    weight: 32
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 34
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_tdj_projet_groupe: true

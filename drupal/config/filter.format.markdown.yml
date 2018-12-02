@@ -1,0 +1,14 @@
+uuid: 1f9a01e3-95a1-427b-b72a-17ad7db969f3
+langcode: en
+status: true
+dependencies: {  }
+name: Markdown
+format: markdown
+weight: 0
+filters:
+  filter_null:
+    id: filter_null
+    provider: filter
+    status: true
+    weight: -10
+    settings: {  }

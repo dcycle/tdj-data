@@ -1,0 +1,22 @@
+uuid: 408bcc71-5a5f-4ea0-9cc1-f9af2246dd89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.simplenews
+  module:
+    - text
+id: node.simplenews.body
+field_name: body
+entity_type: node
+bundle: simplenews
+label: Corps
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

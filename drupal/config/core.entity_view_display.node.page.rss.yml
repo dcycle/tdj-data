@@ -1,0 +1,61 @@
+uuid: a61a7757-e5de-4e81-a2f3-0ccc7083fd78
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.page.body
+    - field.field.node.page.comment_node_page
+    - field.field.node.page.field_images
+    - field.field.node.page.field_my_documents
+    - field.field.node.page.field_my_non_public_docs
+    - field.field.node.page.field_my_translation_priority
+    - node.type.page
+  module:
+    - file
+    - text
+    - user
+id: node.page.rss
+targetEntityType: node
+bundle: page
+mode: rss
+content:
+  field_images:
+    label: hidden
+    weight: -4
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 33
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_my_non_public_docs:
+    label: hidden
+    weight: 0
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_my_translation_priority:
+    label: above
+    weight: 31
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_page: true

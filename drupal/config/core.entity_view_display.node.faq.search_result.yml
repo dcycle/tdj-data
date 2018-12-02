@@ -1,0 +1,43 @@
+uuid: ba2d38cd-9826-4b64-adef-dd15caa3ee5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.faq.body
+    - field.field.node.faq.comment_node_faq
+    - field.field.node.faq.field_images
+    - field.field.node.faq.field_my_documents
+    - node.type.faq
+  module:
+    - file
+    - user
+id: node.faq.search_result
+targetEntityType: node
+bundle: faq
+mode: search_result
+content:
+  field_images:
+    label: hidden
+    weight: 34
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  field_my_documents:
+    label: above
+    weight: 32
+    type: file_default
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  comment_node_faq: true

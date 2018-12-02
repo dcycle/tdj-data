@@ -1,0 +1,21 @@
+uuid: 60fbd6ea-92e8-45f5-98c6-1e105b102509
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tdj_desc
+    - node.type.project_project
+  module:
+    - text
+id: node.project_project.field_tdj_desc
+field_name: field_tdj_desc
+entity_type: node
+bundle: project_project
+label: 'Description sommaire'
+description: 'Décrivez sommairement votre projet'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
