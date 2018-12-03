@@ -75,3 +75,4 @@ content:
     region: content
 hidden:
   comment_node_procesverbal: true
+  upload: true

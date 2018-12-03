@@ -27,4 +27,8 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  comment_node_simplenews: true
+  field_images: true
+  field_newsletter: true
+  upload: true

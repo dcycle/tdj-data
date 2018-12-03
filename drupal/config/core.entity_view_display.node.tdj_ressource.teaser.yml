@@ -65,3 +65,5 @@ content:
     region: content
 hidden:
   comment_node_tdj_ressource: true
+  field_categorie_de_ressrouce: true
+  upload: true

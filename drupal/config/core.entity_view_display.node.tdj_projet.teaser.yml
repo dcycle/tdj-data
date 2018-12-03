@@ -60,3 +60,4 @@ hidden:
   comment_node_tdj_projet: true
   field_images: true
   field_my_non_public_docs: true
+  upload: true

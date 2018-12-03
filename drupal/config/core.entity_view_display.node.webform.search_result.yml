@@ -32,3 +32,4 @@ content:
 hidden:
   body: true
   comment_node_webform: true
+  upload: true

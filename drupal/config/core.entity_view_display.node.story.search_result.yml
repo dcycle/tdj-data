@@ -50,3 +50,7 @@ content:
 hidden:
   body: true
   comment_node_story: true
+  field_categorie_de_ressrouce: true
+  field_pays: true
+  field_type_d_article: true
+  upload: true

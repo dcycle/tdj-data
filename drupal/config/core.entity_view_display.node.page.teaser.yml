@@ -46,3 +46,6 @@ hidden:
   field_images: true
   field_my_non_public_docs: true
   field_my_translation_priority: true
+  field_pays: true
+  field_type_d_article: true
+  upload: true

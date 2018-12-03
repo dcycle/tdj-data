@@ -32,3 +32,5 @@ content:
 hidden:
   body: true
   comment_node_my_issue: true
+  field_issue_tags: true
+  upload: true

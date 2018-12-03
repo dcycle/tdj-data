@@ -40,3 +40,4 @@ content:
     region: content
 hidden:
   comment_node_profile: true
+  upload: true

@@ -31,3 +31,4 @@ content:
 hidden:
   comment_node_profile: true
   field_my_tdj_portrait: true
+  upload: true

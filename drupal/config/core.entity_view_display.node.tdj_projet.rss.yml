@@ -67,3 +67,4 @@ content:
 hidden:
   body: true
   comment_node_tdj_projet: true
+  upload: true

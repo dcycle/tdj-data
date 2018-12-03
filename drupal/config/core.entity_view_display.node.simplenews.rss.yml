@@ -32,3 +32,5 @@ content:
 hidden:
   body: true
   comment_node_simplenews: true
+  field_newsletter: true
+  upload: true

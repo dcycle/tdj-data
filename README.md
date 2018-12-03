@@ -55,6 +55,11 @@ Updating your local installation is the same command as the installation command
 
 This will bring in new features and keep your existing data.
 
+Production
+-----
+
+We are deploying to a DigitalOcean one-click Docker on Ubuntu 18.4 environment, and we are using the technique described at [Deploying Letsencrypt with Docker-Compose, October 06, 2017, Dcycle Blog](https://blog.dcycle.com/blog/7f3ea9e1/letsencrypt-docker-compose/) to provide Let's Encrypt https encryption.
+
 Power up/power down the Docker environment
 -----
 
@@ -225,3 +230,8 @@ If you _know_ "something" has changed, you might want to run:
 ### Can't see the syslogs (see the "Logging" section, above)
 
 Run `./scripts/deploy.sh`, which will restart rsyslog.
+
+
+sshfs lydie@aegir.koumbit.net:terredesjeunes.org/files /root/tdj-data/do-not-commit/legacy-files/files
+
+http://blog.damontimm.com/how-to-mount-a-sftp-folder-ssh-ftp-on-ubuntu-linux-using-sshfs-fuse/

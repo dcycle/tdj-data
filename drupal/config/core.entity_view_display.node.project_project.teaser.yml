@@ -60,3 +60,5 @@ hidden:
   comment_node_project_project: true
   field_images: true
   field_my_non_public_docs: true
+  field_project_types: true
+  upload: true

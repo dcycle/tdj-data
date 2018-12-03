@@ -42,3 +42,4 @@ content:
 hidden:
   comment_node_tdj_projet_groupe: true
   field_images: true
+  upload: true

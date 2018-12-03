@@ -42,5 +42,9 @@ content:
     region: content
 hidden:
   comment_node_story: true
+  field_categorie_de_ressrouce: true
   field_images: true
   field_my_non_public_docs: true
+  field_pays: true
+  field_type_d_article: true
+  upload: true

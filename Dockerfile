@@ -58,5 +58,6 @@ ADD drupal/settings/local-settings.php /var/www/site-php/starterkit-drupal8site/
 RUN drush dl migrate_plus
 RUN drush dl migrate_upgrade-8.x-3.x-dev
 RUN drush dl migrate_tools
+RUN drush dl jsonapi
 
 EXPOSE 80

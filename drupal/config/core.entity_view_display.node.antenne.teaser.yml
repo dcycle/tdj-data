@@ -68,3 +68,4 @@ hidden:
   comment_node_antenne: true
   field_image: true
   field_my_tdj_flag: true
+  upload: true

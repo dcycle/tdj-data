@@ -42,3 +42,4 @@ content:
 hidden:
   comment_node_faq: true
   field_images: true
+  upload: true
